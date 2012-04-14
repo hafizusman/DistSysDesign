@@ -10,6 +10,7 @@ public class FileServerNode extends RIONode {
 	
 	private String TEMP_PUT_FILE_NAME = "TempPutFile";
 	private String TEMP_CREATE_FILE_NAME = "TempCreateFile";
+	private String TEMP_APPEND_FILE_NAME = "TempAppendFile";
 	
 
 	public FileServerNode() {
@@ -39,6 +40,7 @@ public class FileServerNode extends RIONode {
 		
 		this.createFileOnStart();
 		this.putFileOnStart();
+		this.appendFileOnStart();
 	}
 	
 	private void printError(int errCode, String fileName)
@@ -46,7 +48,7 @@ public class FileServerNode extends RIONode {
 		System.out.println("Node " + this.addr + " Error: Put file " + fileName + " on server " + this.addr + " returned error code " + errCode + "\n");
 	}
 	
-	public void createFile(String fileName)
+	private void createFile(String fileName)
 	{
 		try
 		{
@@ -75,7 +77,7 @@ public class FileServerNode extends RIONode {
 		}
 	}
 	
-	public void createFileOnStart()
+	private void createFileOnStart()
 	{
 		try
 		{
@@ -111,7 +113,33 @@ public class FileServerNode extends RIONode {
 		}
 	}
 	
-	public void putFile(String fileName, String contents)
+	private String getFile(String fileName) // Bug: May need to re think this?
+	{
+		String fileContents = "";
+		
+		try 
+		{
+			PersistentStorageReader psrActual = this.getReader(fileName);
+			
+			fileContents = psrActual.readLine(); // Bug: Is there going to be more than one line
+			
+			psrActual.close();
+		}
+		catch (FileNotFoundException e)
+		{
+			this.printError(10, fileName);
+			e.printStackTrace();
+		} 
+		catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return fileContents; // Bug: This seems bad design
+	}
+	
+	private void putFile(String fileName, String contents)
 	{
 		try 
 		{
@@ -145,7 +173,7 @@ public class FileServerNode extends RIONode {
 		}
 	}
 	
-	public void putFileOnStart()
+	private void putFileOnStart()
 	{
 		try
 		{
@@ -186,4 +214,98 @@ public class FileServerNode extends RIONode {
 		}
 	}
 
+	private void appendFile(String fileName, String contents)
+	{
+		try
+		{
+			PersistentStorageReader psrOld = this.getReader(fileName);
+			
+			String oldFile = psrOld.readLine();
+			
+			PersistentStorageWriter pswTemp = this.getWriter(this.TEMP_APPEND_FILE_NAME, false);
+			
+			pswTemp.write(fileName + "\n" + oldFile);
+			
+			PersistentStorageWriter pswActual = this.getWriter(fileName, true);
+			
+			pswActual.write(contents);
+			
+			pswActual.close();
+			
+			pswTemp.delete();
+		}
+		catch (FileNotFoundException e)
+		{
+			this.printError(10, fileName);
+			e.printStackTrace();
+		} 
+		catch (IOException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void appendFileOnStart()
+	{
+		try
+		{
+			if (Utility.fileExists(this, this.TEMP_APPEND_FILE_NAME))
+			{
+				PersistentStorageReader psrTemp = this.getReader(this.TEMP_APPEND_FILE_NAME);
+
+				PersistentStorageWriter pswTemp = this.getWriter(this.TEMP_APPEND_FILE_NAME, false);
+				
+				if (!psrTemp.ready())
+				{
+					// Bug: see if there is another way to delete
+					pswTemp.delete();
+				}
+				else
+				{
+					String fileName = psrTemp.readLine();
+					
+					String oldContents = psrTemp.readLine();
+					
+					PersistentStorageWriter revertFile = this.getWriter(fileName, false);
+					
+					revertFile.write(oldContents);
+					
+					pswTemp.delete();
+				}
+				
+			}
+		}
+		catch (FileNotFoundException e)
+		{
+			e.printStackTrace();
+		} 
+		catch (IOException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void deleteFile(String fileName)
+	{
+		try 
+		{
+			if (Utility.fileExists(this, fileName))
+			{
+				PersistentStorageWriter pswActual = this.getWriter(fileName, false);
+			
+				pswActual.delete();
+			}
+			else
+			{
+				this.printError(10, fileName);
+			}
+		}
+		catch (IOException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }
