@@ -1,0 +1,63 @@
+!SESSION 2012-04-12 06:27:10.513 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2012-04-12 06:27:13.810
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+!SESSION 2012-04-12 06:45:41.154 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2012-04-12 06:45:42.580
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+!SESSION 2012-04-12 06:51:15.658 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2012-04-12 06:51:17.097
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+!SESSION 2012-04-12 17:46:54.146 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2012-04-12 17:46:57.386
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+!SESSION 2012-04-13 16:58:57.708 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2012-04-13 16:59:01.835
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+!SESSION 2012-04-13 17:37:52.535 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2012-04-13 17:37:55.783
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+!SESSION 2012-04-13 18:08:24.414 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2012-04-13 18:08:26.467
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
