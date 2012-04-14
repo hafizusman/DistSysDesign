@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
-<window height="1018" width="1591" x="0" y="25">
+<window height="878" maximized="true" width="1591" x="0" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
-<coolbarLayout locked="0">
+<coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="104" y="30"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="134" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -27,101 +27,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
-<part id="16"/>
-<part id="17"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RIONode.java" partName="RIONode.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/proj/RIONode.java" title="RIONode.java" tooltip="Assignment1/proj/RIONode.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/proj/RIONode.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="841" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReliableInOrderMsgLayer.java" partName="ReliableInOrderMsgLayer.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/proj/ReliableInOrderMsgLayer.java" title="ReliableInOrderMsgLayer.java" tooltip="Assignment1/proj/ReliableInOrderMsgLayer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/proj/ReliableInOrderMsgLayer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1804"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RIOPacket.java" partName="RIOPacket.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/proj/RIOPacket.java" title="RIOPacket.java" tooltip="Assignment1/proj/RIOPacket.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/proj/RIOPacket.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1144"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RIOTester.java" partName="RIOTester.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/proj/RIOTester.java" title="RIOTester.java" tooltip="Assignment1/proj/RIOTester.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/proj/RIOTester.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1113" selectionTopPixel="712"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Server.java" partName="Server.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/proj/Server.java" title="Server.java" tooltip="Assignment1/proj/Server.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/proj/Server.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="34" selectionOffset="215" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" partName="Client.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/proj/Client.java" title="Client.java" tooltip="Assignment1/proj/Client.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/proj/Client.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="630" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MessageLayer.java" partName="MessageLayer.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/src/edu/washington/cs/cse490h/lib/MessageLayer.java" title="MessageLayer.java" tooltip="Assignment1/src/edu/washington/cs/cse490h/lib/MessageLayer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/src/edu/washington/cs/cse490h/lib/MessageLayer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9887" selectionTopPixel="3672"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="RIOTest" partName="RIOTest" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/scripts/RIOTest" title="RIOTest" tooltip="Assignment1/scripts/RIOTest" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/scripts/RIOTest"/>
-<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="85" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="sim_rio.sh" partName="sim_rio.sh" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/sim_rio.sh" title="sim_rio.sh" tooltip="Assignment1/sim_rio.sh" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/sim_rio.sh"/>
-<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="74" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="compile.sh" partName="compile.sh" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/compile.sh" title="compile.sh" tooltip="Assignment1/compile.sh" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/compile.sh"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="execute.pl" partName="execute.pl" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/execute.pl" title="execute.pl" tooltip="Assignment1/execute.pl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/execute.pl"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="sim_rio_synoptic.sh" partName="sim_rio_synoptic.sh" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/sim_rio_synoptic.sh" title="sim_rio_synoptic.sh" tooltip="Assignment1/sim_rio_synoptic.sh" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/sim_rio_synoptic.sh"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Node.java" partName="Node.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/src/edu/washington/cs/cse490h/lib/Node.java" title="Node.java" tooltip="Assignment1/src/edu/washington/cs/cse490h/lib/Node.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/src/edu/washington/cs/cse490h/lib/Node.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1053" selectionTopPixel="2879"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TwoGenerals.java" partName="TwoGenerals.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/proj/TwoGenerals.java" title="TwoGenerals.java" tooltip="Assignment1/proj/TwoGenerals.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/proj/TwoGenerals.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="82"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Manager.java" partName="Manager.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/src/edu/washington/cs/cse490h/lib/Manager.java" title="Manager.java" tooltip="Assignment1/src/edu/washington/cs/cse490h/lib/Manager.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/src/edu/washington/cs/cse490h/lib/Manager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="4932" selectionTopPixel="2193"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Simulator.java" partName="Simulator.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/src/edu/washington/cs/cse490h/lib/Simulator.java" title="Simulator.java" tooltip="Assignment1/src/edu/washington/cs/cse490h/lib/Simulator.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/src/edu/washington/cs/cse490h/lib/Simulator.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="23" selectionOffset="18817" selectionTopPixel="10634"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="TwoGenerals" partName="TwoGenerals" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/scripts/TwoGenerals" title="TwoGenerals" tooltip="Assignment1/scripts/TwoGenerals" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/scripts/TwoGenerals"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PersistentStorageReader.java" partName="PersistentStorageReader.java" path="/home/451user/CSE552/eclipseWorkspace/Assignment1/src/edu/washington/cs/cse490h/lib/PersistentStorageReader.java" title="PersistentStorageReader.java" tooltip="Assignment1/src/edu/washington/cs/cse490h/lib/PersistentStorageReader.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/src/edu/washington/cs/cse490h/lib/PersistentStorageReader.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -132,8 +41,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="648" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -146,7 +53,7 @@
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
-<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
+<viewState group_libraries="1" layout="2" linkWithEditor="1" rootMode="1" workingSetName="Aggregate for window 1334237397899">
 <customFilters userDefinedPatternsEnabled="false">
 <xmlDefinedFilters>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
@@ -192,7 +99,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -368,183 +275,15 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/proj/RIOTester.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/proj/Client.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Assignment1/sim_rio.sh"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/src/edu/washington/cs/cse490h/lib/MessageLayer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Assignment1/compile.sh"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Assignment1/execute.pl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Assignment1/sim_rio.sh"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Assignment1/sim_rio_synoptic.sh"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/src/edu/washington/cs/cse490h/lib/Node.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/proj/RIONode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Assignment1/scripts/RIOTest"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/proj/Server.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/proj/Client.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/proj/TwoGenerals.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/src/edu/washington/cs/cse490h/lib/Manager.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/src/edu/washington/cs/cse490h/lib/Simulator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Assignment1/scripts/TwoGenerals"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/src/edu/washington/cs/cse490h/lib/PersistentStorageReader.java"/>
-</editors>
-<item historyLabel="Client.java" index="1">
-<position info="not_deleted" x="630" y="0"/>
-</item>
-<item historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="1415" y="0"/>
-</item>
-<item historyLabel="sim_rio.sh" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="1415" y="0"/>
-</item>
-<item historyLabel="MessageLayer.java" index="3">
-<position info="not_deleted" x="487" y="0"/>
-</item>
-<item historyLabel="compile.sh" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="execute.pl" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="sim_rio.sh" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="execute.pl" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="sim_rio.sh" index="6">
-<position info="not_deleted" x="109" y="0"/>
-</item>
-<item historyLabel="sim_rio_synoptic.sh" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MessageLayer.java" index="3">
-<position info="not_deleted" x="487" y="0"/>
-</item>
-<item historyLabel="Node.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MessageLayer.java" index="3">
-<position info="not_deleted" x="359" y="0"/>
-</item>
-<item historyLabel="Node.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RIONode.java" index="9">
-<position info="not_deleted" x="841" y="0"/>
-</item>
-<item historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="4242" y="0"/>
-</item>
-<item historyLabel="sim_rio.sh" index="6">
-<position info="not_deleted" x="109" y="0"/>
-</item>
-<item historyLabel="RIOTest" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="4242" y="0"/>
-</item>
-<item historyLabel="sim_rio.sh" index="6">
-<position info="not_deleted" x="71" y="36"/>
-</item>
-<item historyLabel="RIOTest" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="4242" y="0"/>
-</item>
-<item historyLabel="RIOTest" index="10">
-<position info="not_deleted" x="85" y="7"/>
-</item>
-<item historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="4242" y="0"/>
-</item>
-<item historyLabel="Server.java" index="11">
-<position info="not_deleted" x="215" y="34"/>
-</item>
-<item historyLabel="Client.java" index="12">
-<position info="not_deleted" x="630" y="0"/>
-</item>
-<item historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="4242" y="0"/>
-</item>
-<item historyLabel="sim_rio.sh" index="6">
-<position info="not_deleted" x="71" y="36"/>
-</item>
-<item historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="4492" y="0"/>
-</item>
-<item historyLabel="TwoGenerals.java" index="13">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="4492" y="0"/>
-</item>
-<item historyLabel="sim_rio.sh" index="6">
-<position info="not_deleted" x="74" y="9"/>
-</item>
-<item historyLabel="MessageLayer.java" index="3">
-<position info="not_deleted" x="359" y="0"/>
-</item>
-<item historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="4492" y="0"/>
-</item>
-<item historyLabel="sim_rio.sh" index="6">
-<position info="not_deleted" x="74" y="9"/>
-</item>
-<item historyLabel="RIOTest" index="10">
-<position info="not_deleted" x="85" y="7"/>
-</item>
-<item historyLabel="MessageLayer.java" index="3">
-<position info="not_deleted" x="9903" y="7"/>
-</item>
-<item historyLabel="Manager.java" index="14">
-<position info="not_deleted" x="4932" y="5"/>
-</item>
-<item historyLabel="MessageLayer.java" index="3">
-<position info="not_deleted" x="9887" y="0"/>
-</item>
-<item historyLabel="Simulator.java" index="15">
-<position info="not_deleted" x="18817" y="23"/>
-</item>
-<item historyLabel="RIOTest" index="10">
-<position info="not_deleted" x="85" y="7"/>
-</item>
-<item historyLabel="TwoGenerals.java" index="13">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TwoGenerals" index="16">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TwoGenerals.java" index="13">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RIOTest" index="10">
-<position info="not_deleted" x="85" y="7"/>
-</item>
-<item historyLabel="TwoGenerals" index="16">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Node.java" index="8">
-<position info="not_deleted" x="1053" y="0"/>
-</item>
-<item historyLabel="PersistentStorageReader.java" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item active="true" historyLabel="RIOTester.java" index="0">
-<position info="not_deleted" x="4492" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@13dd04a"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -557,6 +296,21 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Callback.java" tooltip="Assignment1b/lib/edu/washington/cs/cse490h/lib/Callback.java">
+<persistable path="/Assignment1b/lib/edu/washington/cs/cse490h/lib/Callback.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReliableInOrderMsgLayer.java" tooltip="Assignment1b/proj/ReliableInOrderMsgLayer.java">
+<persistable path="/Assignment1b/proj/ReliableInOrderMsgLayer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Protocol.java" tooltip="Assignment1b/proj/Protocol.java">
+<persistable path="/Assignment1b/proj/Protocol.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="emu_rio.sh" tooltip="Assignment1b/emu_rio.sh">
+<persistable path="/Assignment1b/emu_rio.sh"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="compile.sh" tooltip="Assignment1b/compile.sh">
+<persistable path="/Assignment1b/compile.sh"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PersistentStorageReader.java" tooltip="Assignment1/src/edu/washington/cs/cse490h/lib/PersistentStorageReader.java">
 <persistable path="/Assignment1/src/edu/washington/cs/cse490h/lib/PersistentStorageReader.java"/>
 </file>
@@ -586,21 +340,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="sim_rio.sh" tooltip="Assignment1/sim_rio.sh">
 <persistable path="/Assignment1/sim_rio.sh"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="RIOTest" tooltip="Assignment1/scripts/RIOTest">
-<persistable path="/Assignment1/scripts/RIOTest"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MessageLayer.java" tooltip="Assignment1/src/edu/washington/cs/cse490h/lib/MessageLayer.java">
-<persistable path="/Assignment1/src/edu/washington/cs/cse490h/lib/MessageLayer.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" tooltip="Assignment1/proj/Client.java">
-<persistable path="/Assignment1/proj/Client.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Server.java" tooltip="Assignment1/proj/Server.java">
-<persistable path="/Assignment1/proj/Server.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RIOTester.java" tooltip="Assignment1/proj/RIOTester.java">
-<persistable path="/Assignment1/proj/RIOTester.java"/>
 </file>
 </mruList>
 </workbench>

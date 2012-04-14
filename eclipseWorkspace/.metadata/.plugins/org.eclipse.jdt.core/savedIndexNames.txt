@@ -1,13 +1,4 @@
-INDEX VERSION 1.126+/home/451user/CSE552/eclipseWorkspace/.metadata/.plugins/org.eclipse.jdt.core
-4089100239.index
-3920608131.index
+INDEX VERSION 1.126+/Users/Tariq/Documents/CSC590_DistSys/assign1/DistSysDesign/eclipseWorkspace/.metadata/.plugins/org.eclipse.jdt.core
 3007128466.index
-3853645729.index
-1631321113.index
-282049777.index
 754642803.index
-1869567511.index
-3243193181.index
 159335952.index
-2208296706.index
-1831165463.index
