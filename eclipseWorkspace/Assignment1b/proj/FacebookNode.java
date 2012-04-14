@@ -27,31 +27,41 @@ public class FacebookNode extends FileServerNode {
 	// ReadAllMessages MyUserID
 	@Override
 	public void onCommand(String arg0) {
+		String[] command = arg0.split(" ");
 		
-		// TODO Auto-generated method stub
-		// 
-		//RIOSend(1, Protocol.DATA, Utility.stringToByteArray("Hello World"));
-		
-		System.out.println("Hello from facebook");
 	}
 	
 	private void CreateUser(String MyUserID)
 	{
 		// create a MyUserID.txt file on the server
+		// create Friends_MyUserID.txt
+		// create Messages_MyUserID.txt
 	}
 	private void Login(String MyUserID)
 	{
-		// create a 
+		// create a Login_MyUserID.txt file on the server
 	}
 	private void Logout(String MyUserID)
-	{}
+	{
+		// delete Login_MyUserID.txt file on the server
+	}
 	private void RequestFriend(String MyUserID, String FriendUserID)
-	{}
+	{
+		// create Request_FriendUserID_MyUserID.txt
+	}
 	private void AcceptFriend(String MyUserID, String FriendUserID)
-	{}
+	{
+		// delete Request_MyUserID_FriendUserID.txt
+		// append FriendUserID to Friends_MyUserID.txt
+	}
 	private void PostMessageToWall(String MyUserID, String MessageToPost)
-	{}
+	{
+		// get Friends_MyUserID.txt
+		// foreach FriendUserID in txtfile, append MessageToPost to Messages_FriendUserID.txt
+	}
 	private void ReadAllMessages(String MyUserID)
-	{}
+	{
+		// get Messages_MyUserID.txt
+	}
 
 }
