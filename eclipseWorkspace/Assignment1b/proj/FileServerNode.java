@@ -7,6 +7,8 @@ import edu.washington.cs.cse490h.lib.Utility;
 
 
 public class FileServerNode extends RIONode {
+	
+	private String TEMP_PUT_FILE_NAME = "TempPutFile";
 
 	public FileServerNode() {
 		// TODO Auto-generated constructor stub
@@ -32,9 +34,11 @@ public class FileServerNode extends RIONode {
 	public void start() {
 		// TODO Auto-generated method stub
 		System.out.println("Starting Node " + this.addr);
+		
+		this.putFileOnStart();
 	}
 	
-	public void createFile(String fileName, String contents)
+	public void putFile(String fileName, String contents)
 	{
 		try 
 		{
@@ -42,20 +46,62 @@ public class FileServerNode extends RIONode {
 		
 			String oldFile = psr.readLine(); 
 			
-			PersistentStorageWriter psw = this.getWriter("temp", false);
+			PersistentStorageWriter pswTemp = this.getWriter(this.TEMP_PUT_FILE_NAME, false);
 			
-			psw.write(fileName + "\n" + oldFile);
+			pswTemp.write(fileName + "\n" + oldFile);
 			
-			PersistentStorageWriter psw2 = this.getWriter(fileName, false);
+			PersistentStorageWriter pswActual = this.getWriter(fileName, false);
 			
-			psw2.write(contents);
+			pswActual.write(contents);
 			
-			psw.delete();
+			pswTemp.delete();
 			
 		} 
 		catch (FileNotFoundException e)
 		{
-			// TODO Auto-generated catch block
+			System.out.println("Put file " + fileName + " on " + this.addr + " does not exist\n");
+			e.printStackTrace();
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public void putFileOnStart()
+	{
+		try
+		{
+		
+			if (Utility.fileExists(this, this.TEMP_PUT_FILE_NAME))
+			{
+				PersistentStorageReader psrTemp = this.getReader(this.TEMP_PUT_FILE_NAME);
+
+				PersistentStorageWriter pswTemp = this.getWriter(this.TEMP_PUT_FILE_NAME, false);
+				
+				if (!psrTemp.ready())
+				{
+					// Bug: see if there is another way to delete
+					pswTemp.delete();
+				}
+				else
+				{
+					String fileName = psrTemp.readLine();
+					
+					String oldContents = psrTemp.readLine();
+					
+					PersistentStorageWriter revertFile = this.getWriter(fileName, false);
+					
+					revertFile.write(oldContents);
+					
+					pswTemp.delete();
+				}
+				
+			}
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("Put file on start " + this.TEMP_PUT_FILE_NAME + " on " + this.addr + " does not exist\n");
 			e.printStackTrace();
 		} 
 		catch (IOException e) 
