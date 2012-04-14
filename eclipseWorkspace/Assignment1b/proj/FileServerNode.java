@@ -9,6 +9,8 @@ import edu.washington.cs.cse490h.lib.Utility;
 public class FileServerNode extends RIONode {
 	
 	private String TEMP_PUT_FILE_NAME = "TempPutFile";
+	private String TEMP_CREATE_FILE_NAME = "TempCreateFile";
+	
 
 	public FileServerNode() {
 		// TODO Auto-generated constructor stub
@@ -35,7 +37,78 @@ public class FileServerNode extends RIONode {
 		// TODO Auto-generated method stub
 		System.out.println("Starting Node " + this.addr);
 		
+		this.createFileOnStart();
 		this.putFileOnStart();
+	}
+	
+	private void printError(int errCode, String fileName)
+	{
+		System.out.println("Node " + this.addr + " Error: Put file " + fileName + " on server " + this.addr + " returned error code " + errCode + "\n");
+	}
+	
+	public void createFile(String fileName)
+	{
+		try
+		{
+			if (Utility.fileExists(this, fileName))
+			{
+				this.printError(11, fileName);
+			}
+			else
+			{
+				PersistentStorageWriter pswTemp = this.getWriter(this.TEMP_CREATE_FILE_NAME, false);
+				
+				pswTemp.write(fileName);
+				
+				pswTemp.close();
+				
+				PersistentStorageWriter pswActual = this.getWriter(fileName, false);
+				
+				pswActual.close();
+				
+				pswTemp.delete(); // Bug: Can we delete after close? 
+			}
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public void createFileOnStart()
+	{
+		try
+		{
+			if (Utility.fileExists(this, this.TEMP_CREATE_FILE_NAME))
+			{
+				PersistentStorageReader psrTemp = this.getReader(this.TEMP_CREATE_FILE_NAME);
+				
+				PersistentStorageWriter pswTemp = this.getWriter(this.TEMP_CREATE_FILE_NAME, false);
+				
+				if (!psrTemp.ready())
+				{
+					pswTemp.delete();
+				}
+				else
+				{
+					String fileName = psrTemp.readLine();
+					
+					PersistentStorageWriter pswActual = this.getWriter(fileName, false);
+					
+					pswActual.delete();
+					
+					pswTemp.delete();
+				}
+			}
+		}
+		catch (FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
 	}
 	
 	public void putFile(String fileName, String contents)
@@ -50,16 +123,20 @@ public class FileServerNode extends RIONode {
 			
 			pswTemp.write(fileName + "\n" + oldFile);
 			
+			pswTemp.close();
+			
 			PersistentStorageWriter pswActual = this.getWriter(fileName, false);
 			
 			pswActual.write(contents);
 			
-			pswTemp.delete();
+			pswActual.close();
+			
+			pswTemp.delete(); // Bug: Can we delete after close?
 			
 		} 
 		catch (FileNotFoundException e)
 		{
-			System.out.println("Put file " + fileName + " on " + this.addr + " does not exist\n");
+			this.printError(10, fileName);
 			e.printStackTrace();
 		} 
 		catch (IOException e) 
@@ -72,7 +149,6 @@ public class FileServerNode extends RIONode {
 	{
 		try
 		{
-		
 			if (Utility.fileExists(this, this.TEMP_PUT_FILE_NAME))
 			{
 				PersistentStorageReader psrTemp = this.getReader(this.TEMP_PUT_FILE_NAME);
@@ -101,7 +177,6 @@ public class FileServerNode extends RIONode {
 		}
 		catch (FileNotFoundException e)
 		{
-			System.out.println("Put file on start " + this.TEMP_PUT_FILE_NAME + " on " + this.addr + " does not exist\n");
 			e.printStackTrace();
 		} 
 		catch (IOException e) 
