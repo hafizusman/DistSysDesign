@@ -20,7 +20,7 @@ public class FileServerNode extends RIONode {
 	@Override
 	public void onRIOReceive(Integer from, int protocol, byte[] msg) {
 		// TODO Auto-generated method stub
-		if (protocol == Protocol.DATA)
+		if (protocol == Protocol.RIOTEST_PKT)
 		{
 			System.out.print(Utility.byteArrayToString(msg));
 		}
@@ -29,7 +29,7 @@ public class FileServerNode extends RIONode {
 	@Override
 	public void onCommand(String arg0) {
 		// TODO Auto-generated method stub
-		RIOSend(1, Protocol.DATA, Utility.stringToByteArray("Hello World"));
+		RIOSend(1, Protocol.RIOTEST_PKT, Utility.stringToByteArray("Hello World"));
 
 	}
 
